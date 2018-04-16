@@ -19,6 +19,8 @@ top : Stack a -> Maybe a
 
 pop : Stack a -> ( Maybe a, Stack a)
 
+restack : (a -> a) -> Stack a -> Stack a
+
 toList : Stack a -> List a
 ```
 
@@ -53,6 +55,8 @@ enqManyFromFunction : (() -> a) -> Int -> Queue a -> Queue a
 first : Queue a -> Maybe a
 
 deq : Queue a -> ( Maybe a, Queue a)
+
+requeue : (a -> a) -> Queue a -> Queue a
 
 toList : Queue a -> List a
 ```
